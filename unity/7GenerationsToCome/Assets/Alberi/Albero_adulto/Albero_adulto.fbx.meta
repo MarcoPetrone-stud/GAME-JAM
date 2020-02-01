@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: 9f86b72797484bd4eac73c900f156a46
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Albero_adulto
+    100004: Chioma
+    100006: Frutti
+    100008: Germoglio
+    100010: joint32
+    100012: joint33
+    100014: joint34
+    100016: joint35
+    100018: joint36
+    100020: joint37
+    100022: joint38
+    100024: joint39
+    100026: joint40
+    100028: joint41
+    100030: joint_albero_adulto
+    100032: polySurface2
+    100034: polySurface3
+    100036: pSphere1
+    100038: pSphere10
+    100040: pSphere11
+    100042: pSphere12
+    100044: pSphere13
+    100046: pSphere14
+    100048: pSphere2
+    100050: pSphere3
+    100052: pSphere4
+    100054: pSphere5
+    100056: pSphere6
+    100058: pSphere7
+    100060: pSphere8
+    100062: pSphere9
+    100064: Tronco
+    400000: Albero_adulto
+    400002: //RootNode
+    400004: Chioma
+    400006: Frutti
+    400008: Germoglio
+    400010: joint32
+    400012: joint33
+    400014: joint34
+    400016: joint35
+    400018: joint36
+    400020: joint37
+    400022: joint38
+    400024: joint39
+    400026: joint40
+    400028: joint41
+    400030: joint_albero_adulto
+    400032: polySurface2
+    400034: polySurface3
+    400036: pSphere1
+    400038: pSphere10
+    400040: pSphere11
+    400042: pSphere12
+    400044: pSphere13
+    400046: pSphere14
+    400048: pSphere2
+    400050: pSphere3
+    400052: pSphere4
+    400054: pSphere5
+    400056: pSphere6
+    400058: pSphere7
+    400060: pSphere8
+    400062: pSphere9
+    400064: Tronco
+    2100000: TOON_Tronco
+    2100002: TOON_Chioma
+    2100004: TOON_Frutti
+    2100006: TOON_Tronchetto
+    2100008: lambert1
+    4300000: Tronco
+    4300002: polySurface2
+    4300004: pSphere1
+    4300006: pSphere2
+    4300008: pSphere3
+    4300010: pSphere4
+    4300012: pSphere14
+    4300014: pSphere13
+    4300016: pSphere12
+    4300018: pSphere11
+    4300020: pSphere10
+    4300022: pSphere9
+    4300024: pSphere8
+    4300026: pSphere7
+    4300028: pSphere6
+    4300030: pSphere5
+    4300032: Germoglio
+    4300034: polySurface3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Germoglio
+    13700002: polySurface2
+    13700004: polySurface3
+    13700006: pSphere1
+    13700008: pSphere10
+    13700010: pSphere11
+    13700012: pSphere12
+    13700014: pSphere13
+    13700016: pSphere14
+    13700018: pSphere2
+    13700020: pSphere3
+    13700022: pSphere4
+    13700024: pSphere5
+    13700026: pSphere6
+    13700028: pSphere7
+    13700030: pSphere8
+    13700032: pSphere9
+    13700034: Tronco
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -79,9 +79,12 @@ public class PlayerController : MonoBehaviour
             case "TriggerWater" :
                 swim = true;
                 anim.SetBool("Swim", true);
+                rb.useGravity = false;
                 break;
             
             case "TriggerBeach":
+                transform.Translate(transform.forward + Vector3.up);
+                rb.useGravity = true;
                 swim = false;
                 break;
                 
