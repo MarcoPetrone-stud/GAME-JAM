@@ -47,9 +47,9 @@ public class PlayerController : MonoBehaviour
         //_controller.SimpleMove(move);
         move.z=speed * vMove;
 
-        if (Input.GetKeyDown(KeyCode.K))
+       // if (Input.GetKeyDown(KeyCode.K))
        //     if (_controller.isGrounded)
-                move.y += 10;
+         //       move.y += 10;
         
         //if (!_controller.isGrounded)
          //   move.y -= 5 * Time.deltaTime;
@@ -80,11 +80,15 @@ public class PlayerController : MonoBehaviour
                 swim = true;
                 anim.SetBool("Swim", true);
                 rb.useGravity = false;
+                rb.velocity = Vector3.zero;
                 break;
             
             case "TriggerBeach":
-                transform.Translate(transform.forward + Vector3.up);
+                //transform.Translate(transform.forward *3  + Vector3.up);
+                transform.Translate(transform.localRotation*Vector3.right + Vector3.up);
                 rb.useGravity = true;
+                anim.SetBool("Swim", false);
+
                 swim = false;
                 break;
                 
