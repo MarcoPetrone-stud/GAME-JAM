@@ -13,15 +13,15 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 4;
     public Animator anim;
     private NavMeshAgent _agent;
-
-
-
-
+    public Rigidbody rb;
+    
+    private float thrust = 10.0f;
     void Start()
     {
         anim = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
         _controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
         _controller.SimpleMove(move);
 
         anim.SetFloat("Walk", vMove);
+    }
 
+    private void OnTriggerEnter(Collider coll)
+    {
+        rb.AddForce(transform.up * thrust);
     }
 }
