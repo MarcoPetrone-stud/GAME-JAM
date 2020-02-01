@@ -103,10 +103,13 @@ Assets/Plugins/Editor/JetBrains*
 
 # Project Related
 unity/interactonTest/
-Assets/_Dev/
-Assets/_Dev.meta
-Assets/_Test/
-Assets/_Test.meta
+/unity/7GenerationsToCome/Assets/_Dev/
+/unity/7GenerationsToCome/Assets/_Dev.meta
+/unity/7GenerationsToCome/Assets/_Test/
+/unity/7GenerationsToCome/Assets/_Test.meta
+/unity/7GenerationsToCome/Library
+
+
 
 FmodProject/.user/
 FmodProject/.unsaved/
