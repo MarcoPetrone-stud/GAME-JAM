@@ -1,0 +1,8 @@
+<World>
+	<Species pop0="10" name="Tree"      controls="Bird"      factor="0.07" lifespan="2" season="3" >
+	<Species pop0="10" name="Bird"      controls="Algae"     factor="0.07" lifespan="2" season="1" >
+	<Species pop0="10" name="Algae"     controls="Dragonfly" factor="0.12" lifespan="2" season="0" >
+	<Species pop0="10" name="Dragonfly" controls="Anemone"   factor="0.07" lifespan="1" season="2" >
+	<Species pop0="10" name="Anemone"   controls="Walker"    factor="0.12" lifespan="2" season="3" >
+	<Species pop0="10" name="Walker"    controls="Tree"      factor="0.07" lifespan="1" season="0" >
+</World>

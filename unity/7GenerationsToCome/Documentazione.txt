@@ -1,0 +1,19 @@
+SymAgent
+Porta i dati degli elementi di simulazione; è una class, non un mono. Non ha classi derivate. Quando creati e distrutti vengono messi in un dizionario, All, statico, e si possono contare con una funzione Censimento.
+
+Censor
+Salva un file Censimento.txt con dentro tutti i dati; non usa la funzione per le headlines
+
+VectorCreature
+è un mono; ha un botto di classi derivate e implementa le azioni delle creature; ogni VectorCreature incarna un symAgent. Se una creatura si evolve il suo SymAgent si trasferisce ad un nuovo VectorCreature. Fa cambiamenti in base all'età, che legge dal SymAgent.
+
+Idlespace
+Ha vari discendenti; rappresenta uno spazio entro cui si può pescare un punto casuale. Viene usato per esempio per il moto di pascolo di pesci e uccelli.
+
+Populator
+Questi oggetti generano i primi elementi nella scena
+
+
+MotherNature
+Tiene i modelli delle creature da istanziare e cognizione dei bacini dove stazionano gli animali (cielo sopra i geyser, acqua, ecc).
+
