@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Cinemachine;
+using UnityEditor.Animations;
+using UnityEngine.AI;
+
+public class PlayerController : MonoBehaviour
+{
+    CharacterController _controller;
+    public float speed = 4;
+    public float rotationSpeed = 4;
+    public Animator anim;
+    private NavMeshAgent _agent;
+
+
+
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        _agent = GetComponent<NavMeshAgent>();
+        _controller = GetComponent<CharacterController>();
+    }
+
+    void Update()
+    {
+        var hMove = Input.GetAxis("Horizontal");
+        var rotation = rotationSpeed * hMove;
+        var rotVector = new Vector3(0, rotation, 0);
+        transform.Rotate(rotVector);
+
+        var forward = transform.TransformDirection(Vector3.forward);
+        var vMove = Input.GetAxis("Vertical");
+        vMove = Mathf.Clamp(vMove, 0, 1);
+        var currentSpeed = speed * vMove;
+        var move = currentSpeed * forward;
+        _controller.SimpleMove(move);
+
+        anim.SetFloat("Walk", vMove);
+
+    }
+}
