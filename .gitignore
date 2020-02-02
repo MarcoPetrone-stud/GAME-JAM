@@ -8,6 +8,8 @@
 Assets/AssetStoreTools*
 .gradle/
 
+/unity/GenerationsToCome/[Ll]ibrary
+
 # Visual Studio 2015 cache directory
 /.vs/
 
