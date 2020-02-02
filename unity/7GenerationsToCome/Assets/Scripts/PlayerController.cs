@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent _agent;
     private Rigidbody rb;
     private bool swim;
-    private float swimSpeed = 3;
+    private float swimSpeed = 1;
     
     
     
@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
         
         transform.Translate(move*Time.deltaTime);
         
+       
+       
         
         
         anim.SetFloat("Walk", vMove);
@@ -77,23 +79,39 @@ public class PlayerController : MonoBehaviour
 
     } 
 
-    private void OnTriggerEnter(Collider coll)
+    private void OnTriggerStay(Collider coll)
     {
         
-        switch (coll.gameObject.name) { 
+        switch (coll.gameObject.name) 
+        { 
             case "Geyser" :
                 rb.AddForce(transform.up * thrust);
                 break;
+            
+           
 
             
             case "TriggerWater" :
                 swim = true;
                 anim.SetBool("Swim", true);
-                rb.useGravity = false;
+               rb.useGravity = false;
                 rb.velocity = Vector3.zero;
-                float swimY = Input.GetAxis("Fire1");
-                swimY = Mathf.Clamp(swimY, 0, 1);
-                if (Input.GetButtonDown("Fire1")) Debug.Log("Su");//rb.AddForce(transform.up * swimSpeed);
+                
+                
+                
+                var swimY = Input.GetAxis("Fire1");
+                //move.y += 
+                
+                
+                
+              
+                if (Input.GetAxis("Fire1") > 0 )
+                {
+                   
+                    gameObject.transform.position += new Vector3(0, (swimSpeed * Time.deltaTime), 0);
+                    // swimY = Mathf.Clamp(swimY, 0, 1);
+                }
+                else gameObject.transform.position += new Vector3(0, -(swimSpeed * Time.deltaTime), 0);
 
 
                 break;
@@ -101,14 +119,22 @@ public class PlayerController : MonoBehaviour
             case "TriggerBeach":
                 //transform.Translate(transform.forward *3  + Vector3.up);
                 transform.Translate(transform.localRotation*Vector3.right + Vector3.up);
-                rb.useGravity = true;
-                anim.SetBool("Swim", false);
-
-                swim = false;
+               
                 break;
-                
+         
+            
         }
     }
 
-    
+    private void OnTriggerExit(Collider coll)
+    {
+        switch (coll.gameObject.name)
+        {
+            case "TriggerWater":
+                rb.useGravity = true;
+                anim.SetBool("Swim", false);
+                swim = false;
+                break;
+        }
+    }
 }
