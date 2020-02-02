@@ -86,7 +86,6 @@ public class PlayerController : MonoBehaviour
         { 
             case "Geyser" :
                 rb.AddForce(transform.up * thrust);
-                anim.SetBool("Fly", true);
                 break;
             
            
@@ -135,10 +134,6 @@ public class PlayerController : MonoBehaviour
                 rb.useGravity = true;
                 anim.SetBool("Swim", false);
                 swim = false;
-                break;
-            
-            case "Geyser" :
-                anim.SetBool("Fly", false);
                 break;
         }
     }
