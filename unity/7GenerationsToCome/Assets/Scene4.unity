@@ -4383,12 +4383,47 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42f8a2adff9f84f49af7716de9fe8a24, type: 2}
+    - target: {fileID: 2463937798308222198, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937798577982133, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937798731536195, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937799107677683, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2463937799116705883, guid: 0eb66b313a97f984b8b66a850296a2a9,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2463937799116705882, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937799394205809, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937799978306074, guid: 0eb66b313a97f984b8b66a850296a2a9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463937800221436468, guid: 0eb66b313a97f984b8b66a850296a2a9,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -6483,7 +6518,7 @@ SpriteRenderer:
   m_Size: {x: 76.799995, y: 43.199997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1431410718
@@ -7135,7 +7170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699675785}
   m_LocalRotation: {x: -0.006467709, y: -0.1251544, z: 0.009713858, w: 0.9920687}
-  m_LocalPosition: {x: -3.68, y: -1.08, z: 5.56}
+  m_LocalPosition: {x: -2.99, y: -1.07, z: 5.35}
   m_LocalScale: {x: 2.97945, y: 1.2017115, z: 2.97945}
   m_Children: []
   m_Father: {fileID: 2017850946}
@@ -7223,7 +7258,7 @@ GameObject:
   - component: {fileID: 2082954209}
   - component: {fileID: 2082954208}
   m_Layer: 0
-  m_Name: TriggerWater
+  m_Name: Lake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7263,7 +7298,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082954207}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
