@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 4;
     public float rotationSpeed = 4;
     public Animator anim;
-    public GameObject canvas;
+    //public GameObject canvas;
     
     private NavMeshAgent _agent;
     private Rigidbody rb;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     
     
     
-    private float thrust = 1000.0f;
+    private float thrust = 100.0f;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -38,14 +38,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetButtonDown("Fire2"))
-        {
-            canvas.gameObject.SetActive(true);
-        }
-        else
-        {
-            canvas.gameObject.SetActive(false);
-        }
+      //  if (Input.GetButtonDown("Fire2"))
+        //{
+          //  canvas.gameObject.SetActive(true);
+        //}
+        //else
+        //{
+         //   canvas.gameObject.SetActive(false);
+       // }
         
         var hMove = Input.GetAxis("Horizontal");
         var rotation = rotationSpeed * hMove;
