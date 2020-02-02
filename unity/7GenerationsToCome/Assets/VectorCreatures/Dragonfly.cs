@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class Dragonfly : VectorCreature {
 
-    
+
+    float timebellula = 0;
+
     void Start() {
-        IdleInSpace(MotherNature.Environments["AnemonesSky"]);
+
+        IdleInSpace(MotherNature.Environments["LakeSky"]);
     }
 
         
       
-    override protected void UpdateCreature()
-    {
-      //  if (agent.lifetime > 20)
+    override protected void UpdateCreature() {
+        timebellula += Time.deltaTime * MotherNature.self.timescale;
+
+        if (timebellula>20 && currentIdlespace.name!="AnemonesSky" & MotherNature.self.GetSeason()>2) 
+            IdleInSpace(MotherNature.Environments["AnemonesSky"]);
+
+        if (agent.lifetime>100 && MotherNature.self.GetSeason()<2)
+            IdleInSpace(MotherNature.Environments["LakeSky"]);
+
+        if (agent.lifetime > 150) Kill();
         //    GoFish();
     }
 

@@ -123,6 +123,8 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Collectable.cs" />
+    <Compile Include="Assets\Fruit.cs" />
     <Compile Include="Assets\IdleInSpaces\Boxspace.cs" />
     <Compile Include="Assets\IdleInSpaces\Compositespace.cs" />
     <Compile Include="Assets\IdleInSpaces\Cylinderspace.cs" />
@@ -133,9 +135,13 @@
     <Compile Include="Assets\Simulo.cs" />
     <Compile Include="Assets\SpeciesDescriptor.cs" />
     <Compile Include="Assets\SymAgent.cs" />
+    <Compile Include="Assets\VectorCreatures\Anemone.cs" />
+    <Compile Include="Assets\VectorCreatures\Bird.cs" />
     <Compile Include="Assets\VectorCreatures\Dragonfly.cs" />
     <Compile Include="Assets\VectorCreatures\Fish.cs" />
+    <Compile Include="Assets\VectorCreatures\Tree.cs" />
     <Compile Include="Assets\VectorCreatures\VectorCreature.cs" />
+    <Compile Include="Assets\VectorCreatures\Walker.cs" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>B:/Documents and Settings/Sumero/Documenti/Unity/GAME-JAM/unity/7GenerationsToCome/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

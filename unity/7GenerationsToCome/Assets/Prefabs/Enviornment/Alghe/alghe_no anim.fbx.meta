@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 31cb17620970b004b9a9856f39014ffd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aiSkyDomeLight1
+    100002: //RootNode
+    100004: alghe_tutte
+    100006: directionalLight1
+    100008: foglia1
+    100010: foglia10
+    100012: foglia11
+    100014: foglia12
+    100016: foglia13
+    100018: foglia14
+    100020: foglia15
+    100022: foglia16
+    100024: foglia17
+    100026: foglia18
+    100028: foglia19
+    100030: foglia2
+    100032: foglia3
+    100034: foglia5
+    100036: foglia6
+    100038: foglia7
+    100040: foglia8
+    100042: foglia9
+    100044: imagePlane1
+    400000: aiSkyDomeLight1
+    400002: //RootNode
+    400004: alghe_tutte
+    400006: directionalLight1
+    400008: foglia1
+    400010: foglia10
+    400012: foglia11
+    400014: foglia12
+    400016: foglia13
+    400018: foglia14
+    400020: foglia15
+    400022: foglia16
+    400024: foglia17
+    400026: foglia18
+    400028: foglia19
+    400030: foglia2
+    400032: foglia3
+    400034: foglia5
+    400036: foglia6
+    400038: foglia7
+    400040: foglia8
+    400042: foglia9
+    400044: imagePlane1
+    2100000: aiToon1
+    2300000: foglia1
+    2300002: foglia10
+    2300004: foglia11
+    2300006: foglia12
+    2300008: foglia13
+    2300010: foglia14
+    2300012: foglia15
+    2300014: foglia16
+    2300016: foglia17
+    2300018: foglia18
+    2300020: foglia19
+    2300022: foglia2
+    2300024: foglia3
+    2300026: foglia5
+    2300028: foglia6
+    2300030: foglia7
+    2300032: foglia8
+    2300034: foglia9
+    3300000: foglia1
+    3300002: foglia10
+    3300004: foglia11
+    3300006: foglia12
+    3300008: foglia13
+    3300010: foglia14
+    3300012: foglia15
+    3300014: foglia16
+    3300016: foglia17
+    3300018: foglia18
+    3300020: foglia19
+    3300022: foglia2
+    3300024: foglia3
+    3300026: foglia5
+    3300028: foglia6
+    3300030: foglia7
+    3300032: foglia8
+    3300034: foglia9
+    4300000: foglia1
+    4300002: foglia2
+    4300004: foglia3
+    4300006: foglia5
+    4300008: foglia6
+    4300010: foglia7
+    4300012: foglia8
+    4300014: foglia9
+    4300016: foglia10
+    4300018: foglia11
+    4300020: foglia12
+    4300022: foglia13
+    4300024: foglia14
+    4300026: foglia15
+    4300028: foglia16
+    4300030: foglia17
+    4300032: foglia18
+    4300034: foglia19
+    10800000: directionalLight1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

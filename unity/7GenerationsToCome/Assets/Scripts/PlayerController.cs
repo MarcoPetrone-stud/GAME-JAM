@@ -67,11 +67,20 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Walk", vMove);
     }
 
+    public int score = 0;
+
+    private void OnCollisionEnter(Collision collision) {
+        Collectable collo = collision.gameObject.GetComponent<Collectable>();
+        if (collo == null) return;
+        score+=collo.Collect();
+
+    } 
+
     private void OnTriggerEnter(Collider coll)
     {
         Debug.Log(coll.name);
         switch (coll.gameObject.name) { 
-            case "TriggerGeyzer" :
+            case "Geyser" :
                 rb.AddForce(transform.up * thrust);
                 break;
 

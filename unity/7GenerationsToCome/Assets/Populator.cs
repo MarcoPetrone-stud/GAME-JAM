@@ -4,20 +4,36 @@ using UnityEngine;
 
 public class Populator : MonoBehaviour
 {
+
+    public int pop = 3;
+
+    public string creature = "Fish";
+
+    int gen = 3;
+
     void Start() {
-        for (int i=0; i<3; i++) {
-            GameObject g = Instantiate(MotherNature.Creatures["Fish"], transform.position + Random.insideUnitSphere * 2, Quaternion.identity);
+        if (creature == "Fish" || creature == "Walker") gen = 2;
+
+        Populate(pop);
+    }
+
+    public void Populate(int pula) {
+        for (int i=0; i<pula; i++) {
+            GameObject g = Instantiate(MotherNature.Creatures[creature], /*transform.position + Random.insideUnitSphere * 2*/ GetComponent<Idlespace>().PickPoint(), Quaternion.identity);
             g.SetActive(true);
-            g.GetComponent<Fish>().agent = SymAgent.Create("Fish", Random.Range(0, 2.0f));
+            g.GetComponent<VectorCreature>().agent = SymAgent.Create(creature, Random.Range(0, 2.0f));
+            g.GetComponent<VectorCreature>().RandomAge();
           //  g.GetComponent<Fish>().IdleInSpace(GetComponent<Idlespace>());
         }
 
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void PopulateWisely() {
+        Populate(pop / gen);
+    }
+
+
+    void Update() {
         
     }
 }

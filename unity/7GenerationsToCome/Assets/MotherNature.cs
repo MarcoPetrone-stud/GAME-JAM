@@ -9,6 +9,7 @@ public class MotherNature : MonoBehaviour {
 
     public List<Idlespace> environlist=new List<Idlespace>(); //Si converte questa lista di spazi inseriti a mano
     public static Dictionary<string, Idlespace> Environments = new Dictionary<string, Idlespace>(); //in questo bellissimo dizionario raggiungibile dinamicamente
+    public static Dictionary<string, Populator> Nursery = new Dictionary<string, Populator>(); //
 
     public float year = 120; //Un anno in tempo di gioco
     public int characterlife = 5; 
@@ -26,15 +27,34 @@ public class MotherNature : MonoBehaviour {
 
         foreach (Idlespace s in environlist) {
             Environments.Add(s.name, s);
-            //g.SetActive(false);
+            foreach (Populator p in s.gameObject.GetComponents<Populator>())
+                Nursery[p.creature] = p;
         }
 
 
 
     }
 
+    List<List<string>> stagiono = new List<List<string>>() { new List<string>() {"Tree", "Fish" } ,
+                                                             new List<string>() {"Walker" } ,
+                                                             new List<string>() { } ,
+                                                             new List<string>() {"Bird", "Anemone" } };
+
+    public void TriggerSeason(int season) {
+        foreach (string s in stagiono[season])
+            Nursery[s].PopulateWisely();
+    }
+
+    public int prev = 0;
     void Update() {
         elaspedTime += timescale * Time.deltaTime;
+        int next = Mathf.FloorToInt(GetSeason());
+        if (prev != next) TriggerSeason(next);
+        prev = next;
+    }
+
+    public float GetSeason() {
+        return (elaspedTime % 120) / 30;
     }
 
 }
