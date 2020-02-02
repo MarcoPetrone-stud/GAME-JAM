@@ -289,7 +289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  innerPrefab: {fileID: 0}
+  innerPrefab: {fileID: 4820198476927655218, guid: 03625f89ba47b4546b054943c084e3c0,
+    type: 3}
   ages:
   - {fileID: 4914585297024896391}
   - {fileID: 4914585295146343641}
