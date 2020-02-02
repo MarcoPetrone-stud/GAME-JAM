@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent _agent;
     private Rigidbody rb;
     private bool swim;
+    private float swimSpeed = 3;
     
     
     
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider coll)
     {
-        Debug.Log(coll.name);
+        
         switch (coll.gameObject.name) { 
             case "Geyser" :
                 rb.AddForce(transform.up * thrust);
@@ -90,6 +91,11 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("Swim", true);
                 rb.useGravity = false;
                 rb.velocity = Vector3.zero;
+                float swimY = Input.GetAxis("Fire1");
+                swimY = Mathf.Clamp(swimY, 0, 1);
+                if (Input.GetButtonDown("Fire1")) Debug.Log("Su");//rb.AddForce(transform.up * swimSpeed);
+
+
                 break;
             
             case "TriggerBeach":
